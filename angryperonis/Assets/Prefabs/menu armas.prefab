@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1035815070289933850}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.07, y: -0.27, z: 0}
+  m_LocalPosition: {x: 2.1, y: -0.4, z: 0}
   m_LocalScale: {x: 0.25895104, y: 0.23681177, z: 1.6129034}
   m_Children: []
   m_Father: {fileID: 2462490945714352082}
@@ -105,7 +105,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2274643297762916449}
   m_LocalRotation: {x: -0, y: -0, z: 0.38697928, w: 0.92208844}
-  m_LocalPosition: {x: -3.992, y: -0.349, z: 0}
+  m_LocalPosition: {x: -1.97, y: -0.349, z: 0}
   m_LocalScale: {x: 0.22352885, y: 0.20737033, z: 0.45057583}
   m_Children: []
   m_Father: {fileID: 2462490945714352082}
@@ -592,7 +592,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7031507005759302348}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.78, y: -0.62, z: 0}
+  m_LocalPosition: {x: 5.67, y: -0.62, z: 0}
   m_LocalScale: {x: 0.6321774, y: 0.47378585, z: 1.6129034}
   m_Children: []
   m_Father: {fileID: 2462490945714352082}
@@ -672,7 +672,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7267830387586522386}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.920003, y: -0.3, z: 0}
+  m_LocalPosition: {x: -5.94, y: -0.3, z: 0}
   m_LocalScale: {x: 0.99462134, y: 0.99462104, z: 0.9662501}
   m_Children: []
   m_Father: {fileID: 2462490945714352082}
@@ -737,12 +737,12 @@ PrefabInstance:
     - target: {fileID: 2971780769973837103, guid: 9a9811c6309a3bd46aeebce3c1ab1d4d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.75
+      value: -5.9
       objectReference: {fileID: 0}
     - target: {fileID: 2971780769973837103, guid: 9a9811c6309a3bd46aeebce3c1ab1d4d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.3
+      value: -0.26
       objectReference: {fileID: 0}
     - target: {fileID: 2971780769973837103, guid: 9a9811c6309a3bd46aeebce3c1ab1d4d,
         type: 3}
