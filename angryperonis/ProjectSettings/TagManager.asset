@@ -9,6 +9,14 @@ TagManager:
   - floor
   - Sky
   - Buitre
+  - Enemy
+  - ExplosionFX
+  - ground
+  - Obstacle
+  - Bullet
+  - HealthBar
+  - BombPickup
+  - Manager
   layers:
   - Default
   - TransparentFX

@@ -6,7 +6,7 @@ using UnityEngine;
 public class CharacterSet : MonoBehaviour
 {
     public Rigidbody2D rb;
-    public float speed, horizontal, jumpForce, maxJump, avJump;
+    public float speed, horizontal, jumpForce, maxJump, avJump, points;
     public Vector3 face;
     public bool onAir;
     public GameObject weaponSpawn, weapon, currentWeapon;
@@ -19,6 +19,8 @@ public class CharacterSet : MonoBehaviour
     public GameObject[] arrayWeapons;
     public Buitre buitre;
 
+    GameObject manager;
+
     void Start()
     {
         MainSprite = this.GetComponent<SpriteRenderer>();
@@ -27,6 +29,8 @@ public class CharacterSet : MonoBehaviour
         destroyable = this.GetComponent<DestroyableComp>();
         rb = this.GetComponent<Rigidbody2D>();
         face = this.transform.right;
+
+        manager = GameObject.FindGameObjectWithTag("Manager");
 
         currentWeapon = GameObject.Instantiate(arrayWeapons[0]);
         currentWeapon.transform.position = weaponSpawn.transform.position;
@@ -46,7 +50,7 @@ public class CharacterSet : MonoBehaviour
 
         if (destroyable.life <= 0)
         {
-            GameObject.Destroy(this.gameObject);
+            Die();
         }
 
         Anim_Pinguin.SetFloat("walk speed", Mathf.Abs(horizontal));
@@ -103,6 +107,7 @@ public class CharacterSet : MonoBehaviour
     public void Die()
     {
         Anim_Pinguin.Play("die");
+        manager.GetComponent<TurnMananger>().score += points;
         GameObject.Destroy(this.gameObject);
     }
 

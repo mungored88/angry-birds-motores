@@ -21,6 +21,8 @@ public class TurnMananger : MonoBehaviour
     public Fondo_loop fondo;
     public menuArmas menu_armas;
 
+    public GameObject canvasEnd, inGameUI;
+    public float score, turns;
 
     private void Start()
     {
@@ -45,7 +47,7 @@ public class TurnMananger : MonoBehaviour
 
     }
 
-    private void Update()
+    public void Update()
     {
         if (activeCharacter != null)
         {
@@ -63,10 +65,18 @@ public class TurnMananger : MonoBehaviour
         {
             cambiarTurno();
         }
+
+        if(turns <= 0)
+        {
+            Debug.Log("Fin de la partida, hiciste"+ score + "puntos");
+            inGameUI.SetActive(false);
+            canvasEnd.SetActive(true);
+        }
     }
 
     private void cambiarTurno()
     {
+        turns--;
         if (fondo != null) fondo.ChangeRandomDirectionSpeed();
         desactivarCharacters();
 
@@ -105,7 +115,7 @@ public class TurnMananger : MonoBehaviour
         activeCharacter.GetComponent<PlayerController>().yaDisparo = false;
         setCamera(character);
         string charName = character.GetComponent<CharacterSet>().nombreCharacter.text;
-        menu_armas.SetSpecialHability(charName); //nombreDelCharacter
+        //menu_armas.SetSpecialHability(charName); //nombreDelCharacter
        }
     private void desactivarCharacters()
     {

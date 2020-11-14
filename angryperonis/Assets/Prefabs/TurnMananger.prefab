@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6469370293880506273}
   m_Layer: 0
   m_Name: TurnMananger
-  m_TagString: Untagged
+  m_TagString: Manager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45,20 +45,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player1Characters:
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   player2Characters:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 0}
   activeCharacter: {fileID: 0}
   esPlayer1: 1
   posA: 0
   posB: 0
+  turns: 5
   timeEspera: 5
   fondo: {fileID: 0}
   menu_armas: {fileID: 0}
+  score: 0
