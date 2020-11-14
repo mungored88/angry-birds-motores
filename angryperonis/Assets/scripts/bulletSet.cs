@@ -12,7 +12,8 @@ public class bulletSet : MonoBehaviour
     public GameObject explotionAnim;
     SpriteRenderer bulletSprite;
     public bool thisMolo;
-    public GameObject spawn1, spawn2, spawn3, spawn4, spawn5;
+    public GameObject spawn1, spawn2, spawn3;
+    public string commandShoot;
 
     private void Start()
     {
@@ -28,6 +29,27 @@ public class bulletSet : MonoBehaviour
             avShoot--;
         }
         this.transform.up = rb.velocity.normalized;
+
+        if (Input.GetButton(commandShoot))
+        {
+            GameObject newExplotion = GameObject.Instantiate(explotionRad);
+            newExplotion.transform.position = spawn1.transform.position;
+            newExplotion.GetComponent<Rigidbody2D>().AddForce((transform.up) * shootForce * rb.gravityScale * rb.mass, ForceMode2D.Impulse);
+
+            GameObject newExplotion2 = GameObject.Instantiate(explotionRad);
+            newExplotion2.transform.position = spawn2.transform.position;
+            newExplotion2.GetComponent<Rigidbody2D>().AddForce((transform.up) * shootForce * rb.gravityScale * rb.mass, ForceMode2D.Impulse);
+
+            GameObject newExplotion3 = GameObject.Instantiate(explotionRad);
+            newExplotion3.transform.position = spawn3.transform.position;
+            newExplotion3.GetComponent<Rigidbody2D>().AddForce((transform.up) * shootForce * rb.gravityScale * rb.mass, ForceMode2D.Impulse);
+
+            exp = true;
+            GameObject.Destroy(this.gameObject);
+            GameObject.Destroy(newExplotion.gameObject, 2f);
+            GameObject.Destroy(newExplotion2.gameObject, 2f);
+            GameObject.Destroy(newExplotion3.gameObject, 2f);
+        }
     }
     public void OnCollisionEnter2D(Collision2D collision)
     {
@@ -57,19 +79,11 @@ public class bulletSet : MonoBehaviour
             GameObject newExplotion3 = GameObject.Instantiate(explotionRad);
             newExplotion3.transform.position = spawn3.transform.position;
 
-            GameObject newExplotion4 = GameObject.Instantiate(explotionRad);
-            newExplotion4.transform.position = spawn3.transform.position;
-
-            GameObject newExplotion5 = GameObject.Instantiate(explotionRad);
-            newExplotion5.transform.position = spawn3.transform.position;
-
             exp = true;
             GameObject.Destroy(this.gameObject, 0.2f);
             GameObject.Destroy(newExplotion.gameObject, 2f);
             GameObject.Destroy(newExplotion2.gameObject, 2f);
             GameObject.Destroy(newExplotion3.gameObject, 2f);
-            GameObject.Destroy(newExplotion4.gameObject, 2f);
-            GameObject.Destroy(newExplotion5.gameObject, 2f);
         }
     }
 }
