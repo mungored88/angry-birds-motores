@@ -16,7 +16,6 @@ public class DestroyableComp : MonoBehaviour
             getDamage( Destructor.damage );
             if (life <= 0)
             {
-                FindObjectOfType<conditionWiner>().lifeDown(gameObject);
                 GameObject.Destroy(this.gameObject);
             }
         }

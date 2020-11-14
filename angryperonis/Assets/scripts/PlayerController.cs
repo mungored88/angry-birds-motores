@@ -94,7 +94,6 @@ public class PlayerController : MonoBehaviour
     public void yaSeDisparo()
     {
         yaDisparo = true;
-        controller.ActivarDesactivarBuitre(false);
     }
 
     public void flipRenderer(bool flip)

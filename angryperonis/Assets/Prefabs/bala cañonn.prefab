@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2370431445250445065}
   - component: {fileID: 595221482692082363}
   - component: {fileID: 7495951823500177757}
+  - component: {fileID: -7239897523643220758}
   m_Layer: 12
   m_Name: "bala ca\xF1onn"
   m_TagString: Untagged
@@ -120,8 +121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootForce: 10
   rb: {fileID: 0}
-  explotionRad: {fileID: 5072509838758398997, guid: bd01f0a419f36094bb675acc57cb8452,
-    type: 3}
+  explotionRad: {fileID: 0}
   explotionAnim: {fileID: 104408115516464467, guid: 1a55943de60543c4fab227bf664392a6,
     type: 3}
   thisMolo: 0
@@ -243,3 +243,16 @@ CircleCollider2D:
   m_Offset: {x: 0.0977997, y: -0.11409005}
   serializedVersion: 2
   m_Radius: 1.358797
+--- !u!114 &-7239897523643220758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6417647912907114453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df35c7c399ca48442a406f6578bec392, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 25

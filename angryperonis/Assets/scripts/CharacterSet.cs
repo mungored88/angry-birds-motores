@@ -6,7 +6,7 @@ using UnityEngine;
 public class CharacterSet : MonoBehaviour
 {
     public Rigidbody2D rb;
-    public float speed, horizontal, jumpForce, maxJump, avJump, points;
+    public float speed, horizontal, jumpForce, maxJump, avJump;
     public Vector3 face;
     public bool onAir;
     public GameObject weaponSpawn, weapon, currentWeapon;
@@ -17,7 +17,6 @@ public class CharacterSet : MonoBehaviour
     public TextMeshPro nombreCharacter;
 
     public GameObject[] arrayWeapons;
-    public Buitre buitre;
 
     GameObject manager;
 
@@ -76,18 +75,6 @@ public class CharacterSet : MonoBehaviour
             GameObject.Destroy(currentWeapon.gameObject);
             InvokeWeapon(3);
         }
-        if (Input.GetKeyDown(KeyCode.Alpha5))
-        {
-            //GameObject.Destroy(currentWeapon.gameObject);
-            try
-            {
-                ActivarDesactivarBuitre(!buitre.gameObject.activeSelf);
-            }
-            catch
-            {
-                Debug.Log("BuitreNotFOund");
-            }
-        }
     }
 
     void InvokeWeapon(int variable)
@@ -98,16 +85,9 @@ public class CharacterSet : MonoBehaviour
         currentWeapon.transform.parent = this.transform;
     }
 
-    public void ActivarDesactivarBuitre(bool activar)
-    {
-        if (!buitre) return;
-        buitre.gameObject.SetActive(activar);//!buitre.gameObject.activeSelf);
-    }
-
     public void Die()
     {
         Anim_Pinguin.Play("die");
-        manager.GetComponent<TurnMananger>().score += points;
         GameObject.Destroy(this.gameObject);
     }
 

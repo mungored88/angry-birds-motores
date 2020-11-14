@@ -66,6 +66,7 @@ public class bulletSet : MonoBehaviour
             exp = true;
             GameObject.Destroy(this.gameObject, 0.2f);
             GameObject.Destroy(newExplotion.gameObject, 0.2f);
+            GameObject.Destroy(newExplotionAnim.gameObject, 1.5f);
         }
         else if (!exp && thisMolo == true)
         {
@@ -91,6 +92,9 @@ public class bulletSet : MonoBehaviour
         }
         else if (!exp && canon == true)
         {
+            float damage = this.gameObject.GetComponent<DestructorComp>().damage;
+            float life = collision.gameObject.GetComponent<DestroyableComp>().life -= damage;
+            
             GameObject.Destroy(this.gameObject, 2f);
         }
     }

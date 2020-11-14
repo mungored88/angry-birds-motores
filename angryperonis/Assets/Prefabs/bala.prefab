@@ -119,10 +119,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootForce: 10
   rb: {fileID: 0}
-  explotionRad: {fileID: 5072509838758398997, guid: bd01f0a419f36094bb675acc57cb8452,
+  explotionRad: {fileID: 5072509838758398997, guid: 21d12081df102e643a6d8cdf069b8a22,
     type: 3}
   explotionAnim: {fileID: 104408115516464467, guid: 1a55943de60543c4fab227bf664392a6,
     type: 3}
+  thisMolo: 0
+  canon: 0
+  spawn1: {fileID: 0}
+  spawn2: {fileID: 0}
+  spawn3: {fileID: 0}
+  commandShoot: 
 --- !u!70 &8785500891377614677
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
