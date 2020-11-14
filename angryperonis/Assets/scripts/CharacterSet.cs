@@ -6,7 +6,7 @@ using UnityEngine;
 public class CharacterSet : MonoBehaviour
 {
     public Rigidbody2D rb;
-    public float speed, horizontal, jumpForce, maxJump, avJump;
+    public float speed, horizontal, jumpForce, maxJump, avJump, points;
     public Vector3 face;
     public bool onAir;
     public GameObject weaponSpawn, weapon, currentWeapon;
@@ -88,6 +88,7 @@ public class CharacterSet : MonoBehaviour
     public void Die()
     {
         Anim_Pinguin.Play("die");
+        manager.GetComponent<TurnMananger>().score += points;
         GameObject.Destroy(this.gameObject);
     }
 

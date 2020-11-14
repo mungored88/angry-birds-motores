@@ -30,6 +30,7 @@ public class granada : MonoBehaviour
             newExplotion.transform.position = this.transform.position;
             exp = true;
             GameObject.Destroy(newExplotion.gameObject, 0.2f);
+            GameObject.Destroy(explotionAnimo.gameObject, 1.5f);
             GameObject.Destroy(this.gameObject, 0.2f);
         }
         explotionTime -= Time.deltaTime;

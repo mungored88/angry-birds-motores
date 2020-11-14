@@ -213,7 +213,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 25
-  destroyable: {fileID: 0}
+  life: 25
+  manager: {fileID: 0}
 --- !u!1 &7225759440189714749
 GameObject:
   m_ObjectHideFlags: 0

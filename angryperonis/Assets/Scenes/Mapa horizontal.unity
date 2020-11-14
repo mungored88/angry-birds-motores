@@ -1879,12 +1879,12 @@ PrefabInstance:
     - target: {fileID: 8898550000341883948, guid: 94470c79ab5da4547806b1e4bb63acf8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -40.1
+      value: -39.52
       objectReference: {fileID: 0}
     - target: {fileID: 8898550000341883948, guid: 94470c79ab5da4547806b1e4bb63acf8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.4
+      value: -5.07
       objectReference: {fileID: 0}
     - target: {fileID: 8898550000341883948, guid: 94470c79ab5da4547806b1e4bb63acf8,
         type: 3}
@@ -2324,16 +2324,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6469370293880506273, guid: 7a4564f32d48b574a90ca1f2874f6b00,
         type: 3}
-      propertyPath: player1Characters.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6469370293880506273, guid: 7a4564f32d48b574a90ca1f2874f6b00,
-        type: 3}
-      propertyPath: player2Characters.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6469370293880506273, guid: 7a4564f32d48b574a90ca1f2874f6b00,
-        type: 3}
       propertyPath: player1Characters.Array.data[0]
       value: 
       objectReference: {fileID: 249164057}
@@ -2342,11 +2332,6 @@ PrefabInstance:
       propertyPath: player2Characters.Array.data[0]
       value: 
       objectReference: {fileID: 249164057}
-    - target: {fileID: 6469370293880506273, guid: 7a4564f32d48b574a90ca1f2874f6b00,
-        type: 3}
-      propertyPath: CanvasEnd
-      value: 
-      objectReference: {fileID: 268005448}
     - target: {fileID: 6469370293880506273, guid: 7a4564f32d48b574a90ca1f2874f6b00,
         type: 3}
       propertyPath: canvasEnd

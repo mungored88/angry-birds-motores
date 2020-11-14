@@ -135,7 +135,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootForce: 8
   explotionTime: 4
-  explotionRad: {fileID: 5072509838758398997, guid: bd01f0a419f36094bb675acc57cb8452,
+  explotionRad: {fileID: 5072509838758398997, guid: 21d12081df102e643a6d8cdf069b8a22,
     type: 3}
   explotionAnim: {fileID: 104408115516464467, guid: 2fee9aac252204d4296a7e33fbd6f983,
     type: 3}
