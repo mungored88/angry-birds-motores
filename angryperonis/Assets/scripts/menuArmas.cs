@@ -16,15 +16,9 @@ public class menuArmas : MonoBehaviour
 
     public TextMeshPro nombreChar;
 
-    private void Start()
-    {
-        desactivarSPS();
-    }
-
     public void SetSpecialHability(String nombre)
     {
         nombreChar.text = nombre;
-        desactivarSPS();
         switch (nombre)
         {
             case "PinguQueen":

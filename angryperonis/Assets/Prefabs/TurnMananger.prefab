@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3170099723165050060
+--- !u!1 &6469370293880506286
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,39 +8,57 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3170099723165050061}
-  - component: {fileID: 3170099723165050050}
+  - component: {fileID: 6469370293880506272}
+  - component: {fileID: 6469370293880506273}
   m_Layer: 0
-  m_Name: RandomSpots
-  m_TagString: SpotGenerator
+  m_Name: TurnMananger
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3170099723165050061
+--- !u!4 &6469370293880506272
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3170099723165050060}
+  m_GameObject: {fileID: 6469370293880506286}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5, y: -10.6, z: -418.95963}
+  m_LocalPosition: {x: 20.46964, y: 7.9539056, z: -51.398438}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3170099723165050050
+--- !u!114 &6469370293880506273
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3170099723165050060}
+  m_GameObject: {fileID: 6469370293880506286}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d16d32c7a320ae74da522b8dbe7eb405, type: 3}
+  m_Script: {fileID: 11500000, guid: e97cb5ac618b7164f9da9640ab297052, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionSpawns: []
+  player1Characters:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  player2Characters:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  activeCharacter: {fileID: 0}
+  esPlayer1: 1
+  posA: 0
+  posB: 0
+  timeEspera: 5
+  fondo: {fileID: 0}
+  menu_armas: {fileID: 0}

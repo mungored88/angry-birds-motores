@@ -28,7 +28,7 @@ public class ExplosionForce : MonoBehaviour {
             // the force will be a vector with a direction from origin to collider's position and with a length of 'forceMultiplier'
             Vector2 force = (col.transform.position - position) * forceExplotion;
             Rigidbody2D rb = col.transform.GetComponent<Rigidbody2D>();
-            rb.AddForce(force);
+            //rb.AddForce(force);
 
         }
         yield return null;
