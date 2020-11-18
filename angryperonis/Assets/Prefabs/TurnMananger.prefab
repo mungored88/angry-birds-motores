@@ -57,4 +57,4 @@ MonoBehaviour:
   canvasEnd: {fileID: 0}
   inGameUI: {fileID: 0}
   score: 0
-  turns: 2
+  turns: 5
