@@ -92,9 +92,6 @@ public class bulletSet : MonoBehaviour
         }
         else if (!exp && canon == true)
         {
-            float damage = this.gameObject.GetComponent<DestructorComp>().damage;
-            float life = collision.gameObject.GetComponent<DestroyableComp>().life -= damage;
-            
             GameObject.Destroy(this.gameObject, 2f);
         }
     }

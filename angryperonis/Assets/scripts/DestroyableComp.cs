@@ -25,7 +25,10 @@ public class DestroyableComp : MonoBehaviour
     {
         life -= dmg;
         DamagePopup.Create(transform.position, dmg, true);
-        vidaTextMesh.text = life.ToString();
+        if(this != null)
+        {
+            vidaTextMesh.text = life.ToString();
+        }
     }
 
     public void getHealth(int hp)

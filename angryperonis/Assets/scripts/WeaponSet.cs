@@ -44,5 +44,6 @@ public class WeaponSet : MonoBehaviour
 
             Camera.main.GetComponent<CameraFollowScript>().SetFollow(newBullet);
         }
+        ammo++;
     }
 }
