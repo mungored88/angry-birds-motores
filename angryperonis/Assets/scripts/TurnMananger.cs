@@ -71,6 +71,7 @@ public class TurnMananger : MonoBehaviour
             Debug.Log("Fin de la partida, hiciste"+ score + "puntos");
             inGameUI.SetActive(false);
             canvasEnd.SetActive(true);
+            activeCharacter.gameObject.SetActive(false);
         }
     }
 
